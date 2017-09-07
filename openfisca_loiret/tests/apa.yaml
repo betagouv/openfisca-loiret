@@ -1,5 +1,5 @@
 - name: "A couple with 2 children gets 200€"
-  period: 2016-01
+  period: 2017-01
   familles:
     parents: ["parent1", "parent2"]
     enfants: ["child1", "child2"]
@@ -13,10 +13,10 @@
   - id: "child2"
     age: 4
   output_variables:
-    local_town_child_allowance: 200
+    loiret_test: 200
 
-- name: "A couple with no child gets nothing"
-  period: 2016-01
+- name: "A couple with no child gets 200€"
+  period: 2017-01
   familles:
     parents: ["parent1", "parent2"]
   individus:
@@ -25,5 +25,14 @@
   - id: "parent2"
     age: 35
   output_variables:
-    local_town_child_allowance: 0
+    loiret_test: 200
 
+- name: "A single individual get 100€"
+  period: 2017-01
+  familles:
+    parents: ["parent1"]
+  individus:
+  - id: "parent1"
+    age: 35
+  output_variables:
+    loiret_test: 100
