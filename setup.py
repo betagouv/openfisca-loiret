@@ -2,15 +2,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="OpenFisca-Extension-Template",
-    version="1.1.1",
-    description="An OpenFisca extension that adds some variables to an already-existing tax and benefit system",
+    name="OpenFisca-Loiret",
+    version="0.1.0",
+    description="Extension OpenFisca pour les aides sociales du conseil départemental du Loiret",
     license="http://www.fsf.org/licensing/licenses/agpl-3.0.html",
     author="",
     packages=find_packages(),
     include_package_data=True,
     install_requires = [
-        'OpenFisca-Country-Template >= 1.2.5,  < 2.0',
+        'OpenFisca-Core >= 17, < 18',
+        'OpenFisca-France >= 18.9, < 19'
         ],
     extras_require = {
         'test': [
