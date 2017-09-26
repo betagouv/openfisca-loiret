@@ -1,5 +1,5 @@
 description: Montant forfaitaire fictif de l'APA pour le département du Loiret
 unit: currency
 values:
-  2017-01-01:
+  2012-01-01:
     value: 100
